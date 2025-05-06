@@ -1,0 +1,51 @@
+
+
+  .nav-container {
+    width: 100%;
+    max-width: 13000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    position: relative; /* Added for proper positioning */
+    padding-bottom: 805px;
+    padding-left: 1050px;
+  }
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 75px; /* Reduced from 50px for better spacing */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color:white; /* Changed from white to dark color for better visibility */
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    padding: 10px 0;
+    position: relative;
+  }
+  
+  .nav-links a:hover {
+    color: #007bff;
+  }
+  
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #007bff;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+
+  
